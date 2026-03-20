@@ -5,6 +5,9 @@ import { crx, ManifestV3Export } from "@crxjs/vite-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 4900,
+  },
   build: {
     rollupOptions: {
       input: { main: "index.html", button_injection: "button_injection.html" },
